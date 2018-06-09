@@ -11,6 +11,8 @@ body {
 a {
     text-decoration: none;
     outline: none;
+    color: inherit;
+    opacity: 0.7;
 }
 ul {
     list-style: none;
@@ -185,4 +187,20 @@ form input {
     border-radius: 7px;
     border: 0;
     width: 500px;
+    outline: 0;
+}
+/* Footer styles */
+footer {
+    display: flex;
+    background-color: #4e8699;
+    justify-content: space-between;
+    padding: 20px 100px;
+    color: #eee;
+    font: normal 16px "Open Sans";
+    text-transform: uppercase;
+    align-items: center;
+}
+footer i {
+    margin: 0 5px;
+    font-size: 30px;
 }

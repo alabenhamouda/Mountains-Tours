@@ -23,7 +23,7 @@ section {
     align-items: center;
     padding: 100px 80px;
 }
-section:nth-of-type(2n+1) {
+section:not(.main):nth-of-type(2n+1) {
     background-color: #fbf8eb;
 }
 section ul {
@@ -101,7 +101,6 @@ section.main{
     text-align: center;
     font: normal 1.5em "Open Sans";
     color: #eee;
-    background-color: transparent;
 }
 section.main a {
     display: block;

@@ -23,6 +23,11 @@ section {
     align-items: center;
     padding: 100px 80px;
 }
+@media (max-width: 800px){
+    section {
+        padding: 50px 40px;
+    }
+}
 section:not(.main):nth-of-type(2n+1) {
     background-color: #fbf8eb;
 }
@@ -99,17 +104,16 @@ header a {
     color: #eee;
     font-family: Quicksand;
 }
-/* section styles */
-
-section.main{
+/* main look styles */
+.main{
     position: relative;
     height: 100vh;
     justify-content: center;
     text-align: center;
-    font: normal 1.5em "Open Sans";
+    font-family: "Open Sans";
     color: #eee;
 }
-section.main a {
+.main a {
     display: block;
     width: 100%;
     opacity: 1;
@@ -137,6 +141,17 @@ section.main a {
     margin-top: 100px;
     opacity: 0;
     animation: slideFade 1s 1s forwards;
+}
+@media (max-width: 800px){
+    .main {
+        height: 600px;
+    }
+    .main h3 {
+        font-size: 18px;
+    }
+    .main h1 {
+        font-size: 40px;
+    }
 }
 @keyframes slideFade {
     100% {
